@@ -27,7 +27,7 @@ export function MyApis() {
         <div className="grid gap-4">
           {apis.map((api) => (
             <article key={api.id} className={`group relative overflow-hidden bg-white dark:bg-[#1c1c1c] rounded-2xl border p-6 shadow-sm transition-all duration-300 ${expandedId === api.id ? 'border-[#D9522C]/60 shadow-lg -translate-y-0.5' : 'border-gray-200 dark:border-gray-800 hover:border-[#D9522C]/40 hover:-translate-y-0.5 hover:shadow-md'}`}>
-              <div className="absolute inset-y-0 left-0 w-1 bg-gradient-to-b from-[#D9522C] to-orange-300" />
+              <div className="absolute inset-y-0 left-0 w-1 bg-linear-to-b from-[#D9522C] to-orange-300" />
               <div className="flex items-start justify-between gap-4 pl-2">
                 <button type="button" onClick={() => setExpandedId(expandedId === api.id ? null : api.id)} className="min-w-0 text-left" aria-expanded={expandedId === api.id}>
                   <div className="mb-2 flex items-center gap-2"><span className="rounded-lg bg-[#D9522C]/10 p-2 text-[#D9522C]"><Icons.Code /></span><p className="text-xs font-bold uppercase tracking-wider text-gray-400">Generated API</p></div><p className="text-gray-900 dark:text-gray-100">{api.prompt}</p>

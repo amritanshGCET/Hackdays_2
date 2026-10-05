@@ -47,7 +47,7 @@ export function Home() {
           </div>
         )}
         {activeApi?.endpoint && (
-          <section className="relative mt-4 rounded-2xl border border-[#D9522C]/25 bg-gradient-to-br from-[#fff1ec] via-white to-[#fffaf7] p-5 shadow-sm dark:border-[#D9522C]/40 dark:from-[#321a14] dark:via-gray-900 dark:to-[#241711]" aria-label="Generated API endpoint">
+          <section className="relative mt-4 rounded-2xl border border-[#D9522C]/25 bg-linear-to-br from-[#fff1ec] via-white to-[#fffaf7] p-5 shadow-sm dark:border-[#D9522C]/40 dark:from-[#321a14] dark:via-gray-900 dark:to-[#241711]" aria-label="Generated API endpoint">
             <p className="text-xs font-bold uppercase tracking-[0.16em] text-[#D9522C]">Live API endpoint</p>
             <p className="mt-3 break-all rounded-xl bg-white px-4 py-3 font-mono text-sm text-gray-700 shadow-inner dark:bg-gray-900 dark:text-gray-300">{activeApi.endpoint}</p>
             <p className="mt-2 text-xs text-[#9f4b35] dark:text-[#f3aa92]">This temporary endpoint is visible here until you refresh the tab. It remains available in My APIs.</p>
